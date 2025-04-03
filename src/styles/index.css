@@ -9,3 +9,59 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-size: 70px;
+    font-weight: 900;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.contenedor {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenedor__texto {
+    display: flex;
+    align-items: center;
+    width: 700px;
+    z-index: 1;
+}
+
+h1 {
+    margin-right: 20px;
+}
+
+.barra__escritura {
+    width: 3px;
+    height: 70px;
+    margin-left: 5px;
+    background-color: #181818;
+    transform: rotateZ(10deg);
+    animation: barra-animacion 1s ease infinite;
+}
+
+.contenedor__texto__animacion {
+    display: flex;
+}
+
+
+/* Barra de escritura animation ---------------------------------------------*/
+
+@keyframes barra-animacion {
+    50% {
+        height: 20px;
+    }
+}
